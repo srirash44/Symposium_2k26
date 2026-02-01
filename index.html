@@ -11,18 +11,15 @@
 
 <body>
 
-<!-- TECH BACKGROUND -->
 <div class="bg"></div>
 
-<!-- HEADER -->
 <header class="glass header">
     <h1>NEXORA 2026</h1>
     <p>National Level Technical Symposium</p>
     <span>13 • 02 • 2026</span>
 </header>
 
-<!-- ABOUT EVENT -->
-<section class="glass about-event">
+<section class="glass section">
     <h2>About Nexora</h2>
     <p>
         <b>Nexora 2026</b> is a national-level technical symposium designed to ignite innovation,
@@ -30,16 +27,49 @@
     </p>
 </section>
 
-<!-- ABOUT COLLEGE -->
-<section class="glass college-info">
-    <h2>About the College</h2>
+<section class="glass section">
+    <h2>Shreenivasa Engineering College (Autonomous)</h2>
     <p>
-        <b>Shreenivasa Engineering College</b> focuses on academic excellence,
-        innovation, and industry-oriented learning.
+        Shreenivasa Engineering College is an autonomous institution committed to
+        academic excellence, research, and industry-oriented education.
     </p>
+
+    <div class="venue-box">
+        <h3>📍 Venue</h3>
+        <p>
+            Shreenivasa Engineering College Campus<br>
+            Dharmapuri District, Tamil Nadu
+        </p>
+    </div>
 </section>
 
-<!-- GALLERY -->
+<section class="glass section center">
+    <h2>Organized By</h2>
+    <h3 class="association">
+        <span>UNIX</span> <span>UNION</span>
+    </h3>
+
+    <div class="dept-grid">
+        <div class="dept-card">
+            <img src="cse-logo.png" alt="CSE Logo">
+            <h4>Computer Science & Engineering</h4>
+            <p class="dept-tag">Mighty CSE</p>
+        </div>
+
+        <div class="dept-card">
+            <img src="it-logo.png" alt="IT Logo">
+            <h4>Information Technology</h4>
+            <p class="dept-tag">Tech Master IT</p>
+        </div>
+
+        <div class="dept-card">
+            <img src="aids-logo.png" alt="AI & DS Logo">
+            <h4>Artificial Intelligence & Data Science</h4>
+            <p class="dept-tag">Code Warriors AI&DS</p>
+        </div>
+    </div>
+</section>
+
 <section class="gallery">
     <div class="glass img-card">
         <img src="college1.jpg" alt="Campus">
@@ -50,12 +80,11 @@
         <span>Auditorium</span>
     </div>
     <div class="glass img-card">
-        <img src="college3.jpg" alt="Laboratory">
+        <img src="college3.jpg" alt="Laboratories">
         <span>Laboratories</span>
     </div>
 </section>
 
-<!-- EVENTS -->
 <section class="events">
     <div class="glass card">
         <h3>Technical Events</h3>
@@ -80,21 +109,58 @@
     </div>
 </section>
 
-<!-- EVENT DETAILS -->
-<section class="glass details">
+<section class="glass section">
     <h2>Event Details</h2>
     <p><b>Date:</b> 13 February 2026</p>
     <p><b>Venue:</b> Shreenivasa Engineering College</p>
     <p><b>Location:</b> Dharmapuri, Tamil Nadu</p>
 </section>
 
-<!-- REGISTRATION -->
-<section class="glass payment" id="register">
+<section class="glass section center" id="register">
     <h2>Registration</h2>
-    <p>💳 Fee: ₹250 per participant</p>
-    <p>📱 Payment: GPay / PhonePe / Paytm</p>
+    <p>Fee: ₹250 per participant</p>
+    <p>Payment: GPay / PhonePe / Paytm</p>
     <button onclick="openPayment()">Proceed to Register</button>
 </section>
+
+<!-- CONTACT -->
+<section class="glass section">
+    <h2>Contact Us</h2>
+
+    <!-- FACULTY -->
+    <div class="contact-group">
+        <h3 class="contact-title">Faculty Coordinators</h3>
+        <div class="contact-grid">
+            <div class="contact-card">
+                <p class="contact-name">Dr. S. Kumar</p>
+                <p>📞 +91 98765 43210</p>
+                <p>📧 kumar@shreenivasa.edu.in</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- STUDENT -->
+    <div class="contact-group">
+        <h3 class="contact-title">Student Coordinators</h3>
+        <div class="contact-grid">
+            <div class="contact-card">
+                <p class="contact-name">Sridhar R</p>
+                <p class="contact-dept">
+                    Department of Artificial Intelligence & Data Science
+                </p>
+                <p>📞 +91 91234 56789</p>
+                <p>📧 nexora.sec@gmail.com</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="glass footer">
+    <p>© 2026 Nexora Symposium | UNIX UNION | Shreenivasa Engineering College</p>
+</footer>
+
+<a href="#register" class="floating-register">Register Now</a>
+
 <!-- PAYMENT MODAL -->
 <div class="payment-modal" id="paymentModal">
     <div class="glass payment-box">
@@ -102,11 +168,6 @@
         <p>Scan the QR & Pay <b>₹250</b></p>
 
         <img src="qr.png" alt="UPI QR Code">
-
-        <p class="note">
-            After payment, click continue and fill the registration form.
-            Registration is valid only after payment.
-        </p>
 
         <a href="https://docs.google.com/forms/d/13eDxuurCiwSJYYGYV5ZqkO7A1-mG68TcIiGcs_eLLQA/viewform"
            target="_blank">
@@ -117,7 +178,6 @@
     </div>
 </div>
 
-<!-- SCRIPT -->
 <script>
 function openPayment() {
     document.getElementById("paymentModal").style.display = "flex";
@@ -126,35 +186,6 @@ function closePayment() {
     document.getElementById("paymentModal").style.display = "none";
 }
 </script>
-<!-- CONTACT -->
-<section class="glass contact">
-    <h2>Contact Us</h2>
-
-    <div class="contact-grid">
-        <div class="contact-card">
-            <h3>Faculty Coordinator</h3>
-            <p>Dr. S. Kumar</p>
-            <p>📞 +91 98765 43210</p>
-            <p>📧 kumar@shreenivasa.edu.in</p>
-        </div>
-
-        <div class="contact-card">
-            <h3>Student Coordinator</h3>
-            <p>Sridhar R</p>
-            <p>📞 +91 91234 56789</p>
-            <p>📧 nexora.sec@gmail.com</p>
-        </div>
-    </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="glass footer">
-    <p>© 2026 Nexora Symposium | Shreenivasa Engineering College</p>
-</footer>
-
-<!-- FLOATING REGISTER -->
-<a href="#register" class="floating-register">Register Now</a>
-
 
 </body>
 </html>
