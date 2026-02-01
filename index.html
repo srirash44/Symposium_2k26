@@ -3,84 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Symposium 2026 | Tech-Vintage</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
-        body { font-family: 'Space Mono', monospace; background-color: #050505; color: #39FF14; }
-        /* Adding a subtle CRT scanline effect for that 90s feel */
-        body::before {
-            content: " "; display: block; position: fixed; top: 0; left: 0; bottom: 0; right: 0;
-            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), 
-                        linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
-            z-index: 999; pointer-events: none; background-size: 100% 2px, 3px 100%;
-        }
-    </style>
+    <title>Nexora Symposium 2026</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="p-4 md:p-12">
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd1q2VtoxphIi64PfgbUFgMlM5WTq8Z8i7XPi29W8-QEal6nw/viewform?usp=publish-editor" class="border border-[#39FF14] py-2 px-4 hover:bg-[#39FF14] hover:text-black">
-    1. FILL PARTICIPANT DETAILS
-    </a>
-    
-    <div class="max-w-5xl mx-auto border-2 border-[#39FF14] p-4 md:p-8 shadow-[0_0_20px_rgba(57,255,20,0.3)]">
-        
-        <header class="text-center border-b-2 border-[#39FF14] pb-8 mb-10">
-            <h1 class="text-3xl md:text-6xl font-bold uppercase tracking-tighter">SYMPOSIUM 2026</h1>
-            <p class="mt-4 text-white text-sm md:text-lg opacity-90">[COLGE NAME] • AI & DATA SCIENCE DEPT</p>
-        </header>
 
-        <section class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
-            <div class="border border-[#39FF14] p-6 bg-[#39FF14]/5">
-                <h2 class="text-xl font-bold underline mb-4 uppercase">The Vision</h2>
-                <p class="text-gray-300 text-sm leading-relaxed">
-                    Bridging the gap between 90s foundational logic and future AI scale. Join us for a day of high-octane technical paper presentations and coding duels.
-                </p>
-            </div>
-            <div class="border border-[#39FF14] p-6 bg-[#39FF14]/5 flex flex-col justify-between">
-                <div>
-                    <h2 class="text-xl font-bold underline mb-4 uppercase">Logistics</h2>
-                    <p class="text-white text-sm">DATE: FEB 20, 2026</p>
-                    <p class="text-white text-sm">TIME: 09:00 AM IST</p>
-                </div>
-                <a href="https://maps.google.com" target="_blank" class="mt-4 inline-block text-center border border-[#39FF14] py-2 hover:bg-[#39FF14] hover:text-black transition-all">
-                    VIEW MAP
-                </a>
-            </div>
-        </section>
+<body>
 
-        <h2 class="text-2xl font-bold mb-6 text-center uppercase tracking-widest">Events</h2>
-        <section class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
-            <div class="border border-[#39FF14] p-4 text-center">
-                <h3 class="font-bold underline">PAPER PRESENTATION</h3>
-                <p class="text-xs text-gray-400 mt-2">Theme: AI & Distributed Systems</p>
-            </div>
-            <div class="border border-[#39FF14] p-4 text-center">
-                <h3 class="font-bold underline">DEBUGGING DUEL</h3>
-                <p class="text-xs text-gray-400 mt-2">Task: Find logic flaws in Python/C++</p>
-            </div>
-            <div class="border border-[#39FF14] p-4 text-center">
-                <h3 class="font-bold underline">AI PROMPT BATTLE</h3>
-                <p class="text-xs text-gray-400 mt-2">Goal: Efficiency & Accuracy</p>
-            </div>
-        </section>
+<!-- TECH BACKGROUND -->
+<div class="bg"></div>
 
-        <section class="max-w-md mx-auto border-2 border-[#39FF14] p-8 text-center bg-[#39FF14]/10">
-            <h2 class="text-2xl font-bold mb-2 uppercase">Registration</h2>
-            <p class="text-white text-xs mb-6 opacity-70">Unified Payment Interface (UPI) & Card Supported</p>
-            
-            <div id="razorpay-embed-holder">
-                <p class="text-[10px] text-gray-500">[Secure Payment Gateway Gateway Gateway]</p>
-                <button class="mt-4 w-full bg-[#39FF14] text-black font-bold py-3 hover:bg-white transition-all">
-                    PROCEED TO PAY
-                </button>
-            </div>
-        </section>
+<!-- HEADER -->
+<header class="glass header">
+    <h1>NEXORA 2026</h1>
+    <p>National Level Technical Symposium</p>
+    <span>13 • 02 • 2026</span>
+</header>
 
+<!-- ABOUT EVENT -->
+<section class="glass about-event">
+    <h2>About Nexora</h2>
+    <p>
+        <b>Nexora 2026</b> is a national-level technical symposium designed to ignite innovation,
+        challenge intellect, and showcase technical excellence.
+    </p>
+</section>
+
+<!-- ABOUT COLLEGE -->
+<section class="glass college-info">
+    <h2>About the College</h2>
+    <p>
+        <b>Shreenivasa Engineering College</b> focuses on academic excellence,
+        innovation, and industry-oriented learning.
+    </p>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery">
+    <div class="glass img-card">
+        <img src="college1.jpg" alt="Campus">
+        <span>Campus View</span>
+    </div>
+    <div class="glass img-card">
+        <img src="college2.jpg" alt="Auditorium">
+        <span>Auditorium</span>
+    </div>
+    <div class="glass img-card">
+        <img src="college3.jpg" alt="Laboratory">
+        <span>Laboratories</span>
+    </div>
+</section>
+
+<!-- EVENTS -->
+<section class="events">
+    <div class="glass card">
+        <h3>Technical Events</h3>
+        <ul>
+            <li>Paper Presentation</li>
+            <li>Project Expo</li>
+            <li>Code Sprint</li>
+            <li>Debugging</li>
+            <li>Tech Quiz</li>
+        </ul>
     </div>
 
-    <footer class="text-center mt-10 text-[10px] opacity-40 uppercase tracking-widest">
-        No Lag • Secured • Optimized for All Devices
-    </footer>
+    <div class="glass card">
+        <h3>Non-Technical Events</h3>
+        <ul>
+            <li>Photography</li>
+            <li>Short Film</li>
+            <li>Treasure Hunt</li>
+            <li>Connections</li>
+            <li>Fun Games</li>
+        </ul>
+    </div>
+</section>
+
+<!-- EVENT DETAILS -->
+<section class="glass details">
+    <h2>Event Details</h2>
+    <p><b>Date:</b> 13 February 2026</p>
+    <p><b>Venue:</b> Shreenivasa Engineering College</p>
+    <p><b>Location:</b> Dharmapuri, Tamil Nadu</p>
+</section>
+
+<!-- REGISTRATION -->
+<section class="glass payment" id="register">
+    <h2>Registration</h2>
+    <p>💳 Fee: ₹250 per participant</p>
+    <p>📱 Payment: GPay / PhonePe / Paytm</p>
+    <button onclick="openPayment()">Proceed to Register</button>
+</section>
+<!-- PAYMENT MODAL -->
+<div class="payment-modal" id="paymentModal">
+    <div class="glass payment-box">
+        <h3>Complete Payment</h3>
+        <p>Scan the QR & Pay <b>₹250</b></p>
+
+        <img src="qr.png" alt="UPI QR Code">
+
+        <p class="note">
+            After payment, click continue and fill the registration form.
+            Registration is valid only after payment.
+        </p>
+
+        <a href="https://docs.google.com/forms/d/13eDxuurCiwSJYYGYV5ZqkO7A1-mG68TcIiGcs_eLLQA/viewform"
+           target="_blank">
+            <button class="continue-btn">I’ve Paid – Continue</button>
+        </a>
+
+        <span class="close" onclick="closePayment()">✕</span>
+    </div>
+</div>
+
+<!-- SCRIPT -->
+<script>
+function openPayment() {
+    document.getElementById("paymentModal").style.display = "flex";
+}
+function closePayment() {
+    document.getElementById("paymentModal").style.display = "none";
+}
+</script>
+<!-- CONTACT -->
+<section class="glass contact">
+    <h2>Contact Us</h2>
+
+    <div class="contact-grid">
+        <div class="contact-card">
+            <h3>Faculty Coordinator</h3>
+            <p>Dr. S. Kumar</p>
+            <p>📞 +91 98765 43210</p>
+            <p>📧 kumar@shreenivasa.edu.in</p>
+        </div>
+
+        <div class="contact-card">
+            <h3>Student Coordinator</h3>
+            <p>Sridhar R</p>
+            <p>📞 +91 91234 56789</p>
+            <p>📧 nexora.sec@gmail.com</p>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="glass footer">
+    <p>© 2026 Nexora Symposium | Shreenivasa Engineering College</p>
+</footer>
+
+<!-- FLOATING REGISTER -->
+<a href="#register" class="floating-register">Register Now</a>
+
+
 </body>
 </html>
-
