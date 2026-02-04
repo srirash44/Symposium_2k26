@@ -1,14 +1,12 @@
 :root {
     --bg-main: #0a0f1f;
     --cyan: #00eaff;
-    --magenta: #ff4ecd;
-    --violet: #7c7cff;
-
     --red: #ff2b2b;
     --orange: #ff6a00;
 
     --glass-bg: rgba(255,255,255,0.14);
-    --glass-border: rgba(255,255,255,0.22);
+    /* Slightly higher border so GitHub looks consistent */
+    --glass-border: rgba(255,255,255,0.25);
 }
 
 * {
@@ -57,10 +55,11 @@ body::before {
     transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
 }
 
+/* Smooth hover */
 .glass:hover {
     transform: translateY(-5px);
     box-shadow: 0 20px 55px rgba(255, 0, 0, 0.22);
-    border-color: rgba(255,255,255,.35);
+    border-color: rgba(255,255,255,.38);
 }
 
 /* HEADER */
@@ -151,10 +150,19 @@ h2 {
 .dept-tag { color: var(--cyan); font-weight: 600; }
 
 /* ================================
-   EVENTS (NO COLLAPSE + INTERACTIVE)
+   EVENTS (GITHUB SAFE + NO COLLAPSE)
 ================================ */
 .events {
-    grid-template-columns: repeat(2, minmax(320px, 1fr));
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 20px;
+    align-items: start;
+}
+
+.event-card {
+    padding: 22px;
+    min-width: 0; /* IMPORTANT: prevents collapse */
 }
 
 .event-card h3 {
@@ -184,10 +192,11 @@ h2 {
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 12px;
 
     flex-wrap: wrap;
+    word-break: break-word;
 }
 
 /* Event icon badge */
@@ -243,6 +252,7 @@ h2 {
     font-size: 0.85rem;
     opacity: 0.75;
     width: 100%;
+    margin-left: 46px;
 }
 
 /* Pills */
@@ -290,6 +300,7 @@ h2 {
     background: rgba(255,255,255,.08);
     border: 1px solid rgba(255,255,255,.10);
     transition: .25s ease;
+    word-break: break-word;
 }
 
 .info-box:hover {
@@ -346,8 +357,9 @@ h2 {
     padding: 18px;
     border-radius: 18px;
     background: rgba(255,255,255,.08);
-    border: 1px solid rgba(255,255,255,.10);
+    border:  1px solid rgba(255,255,255,.10);
     transition: .25s ease;
+    word-break: break-word;
 }
 
 .coordinator:hover {
@@ -370,6 +382,7 @@ h2 {
     padding: 20px;
     background: rgba(255,255,255,.12);
     border-radius: 16px;
+    word-break: break-word;
 }
 
 .contact-name {
@@ -493,6 +506,10 @@ button:hover {
 
     .event-list li:hover {
         transform: none;
+    }
+
+    .mini {
+        margin-left: 0;
     }
 }
 
