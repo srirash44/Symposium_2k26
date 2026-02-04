@@ -3,35 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexora Symposium 2026</title>
+    <title>NEXORA 2026 | National Level Technical Symposium</title>
 
-    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="bg"></div>
+<!-- BACKGROUND VIDEO -->
+<video class="bg-video" autoplay muted loop playsinline>
+    <source src="nexora-tech-bg.mp4" type="video/mp4">
+</video>
 
 <header class="glass header">
     <h1>NEXORA 2026</h1>
-    <p>National Level Technical Symposium</p>
-    <span>13 • 02 • 2026</span>
+    <p class="subtitle">National Level Technical Symposium</p>
+    <span class="date">13 • 02 • 2026</span>
 </header>
 
 <section class="glass section">
     <h2>About Nexora</h2>
     <p>
-        <b>Nexora 2026</b> is a national-level technical symposium designed to ignite innovation,
-        challenge intellect, and showcase technical excellence.
+        <b>NEXORA 2026</b> is a national-level technical symposium crafted to unite innovation,
+        technical excellence, and future-ready engineering minds under one powerful platform.
     </p>
 </section>
 
 <section class="glass section">
     <h2>Shreenivasa Engineering College (Autonomous)</h2>
     <p>
-        Shreenivasa Engineering College is an autonomous institution committed to
-        academic excellence, research, and industry-oriented education.
+        Shreenivasa Engineering College is an autonomous institution dedicated to academic excellence,
+        industry-aligned education, and impactful research.
     </p>
 
     <div class="venue-box">
@@ -51,19 +54,19 @@
 
     <div class="dept-grid">
         <div class="dept-card">
-            <img src="cse-logo.png" alt="CSE Logo">
+            <img src="cse-logo.png" alt="CSE">
             <h4>Computer Science & Engineering</h4>
             <p class="dept-tag">Mighty CSE</p>
         </div>
 
         <div class="dept-card">
-            <img src="it-logo.png" alt="IT Logo">
+            <img src="it-logo.png" alt="IT">
             <h4>Information Technology</h4>
             <p class="dept-tag">Tech Master IT</p>
         </div>
 
         <div class="dept-card">
-            <img src="aids-logo.png" alt="AI & DS Logo">
+            <img src="aids-logo.png" alt="AI & DS">
             <h4>Artificial Intelligence & Data Science</h4>
             <p class="dept-tag">Code Warriors AI&DS</p>
         </div>
@@ -72,7 +75,7 @@
 
 <section class="gallery">
     <div class="glass img-card">
-        <img src="college1.jpg" alt="Campus View">
+        <img src="college1.jpg" alt="Campus">
         <span>Campus View</span>
     </div>
     <div class="glass img-card">
@@ -80,7 +83,7 @@
         <span>Auditorium</span>
     </div>
     <div class="glass img-card">
-        <img src="college3.jpg" alt="Laboratories">
+        <img src="college3.jpg" alt="Labs">
         <span>Laboratories</span>
     </div>
 </section>
@@ -116,81 +119,50 @@
     <p><b>Location:</b> Dharmapuri, Tamil Nadu</p>
 </section>
 
-<!-- LOCATION MAP -->
 <section class="glass section">
     <h2>Location & Map</h2>
-
-    <p>
-        Shreenivasa Engineering College,<br>
-        Dharmapuri District, Tamil Nadu
-    </p>
-
     <div class="map-box">
         <iframe
             src="https://www.google.com/maps?q=Shreenivasa%20Engineering%20College%20Dharmapuri&output=embed"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
+            loading="lazy">
         </iframe>
     </div>
 </section>
-<!-- ONLINE REGISTRATION -->
+
 <section class="glass section center" id="register">
     <h2>Online Registration</h2>
     <p>Fee: ₹250 per participant</p>
-    <p>Payment: GPay / PhonePe / Paytm</p>
     <button onclick="openPayment()">Proceed to Register</button>
 </section>
 
-<!-- ON-SITE REGISTRATION -->
 <section class="glass section center">
     <h2>On-Site Registration</h2>
-    <p>
-        Available for participants registering <b>on the event day</b>.
-    </p>
-    <p>
-        ⏰ Time: 8:30 AM – 10:30 AM<br>
-        📍 Venue: Registration Desk (Main Block)
-    </p>
-
-    <a href="https://docs.google.com/forms/d/ONSITE_FORM_LINK_HERE/viewform"
-       target="_blank">
+    <p>⏰ 8:30 AM – 10:30 AM | 📍 Main Block</p>
+    <a href="https://docs.google.com/forms/d/ONSITE_FORM_LINK_HERE/viewform" target="_blank">
         <button class="onspot-btn">On-Site Register</button>
     </a>
 </section>
 
-<!-- CONTACT -->
 <section class="glass section">
     <h2>Contact Us</h2>
 
-    <div class="contact-group">
-        <h3 class="contact-title">Faculty Coordinators</h3>
-        <div class="contact-grid">
-            <div class="contact-card">
-                <p class="contact-name">Dr. S. Kumar</p>
-                <p>📞 +91 98765 43210</p>
-                <p>📧 kumar@shreenivasa.edu.in</p>
-            </div>
+    <div class="contact-grid">
+        <div class="contact-card">
+            <p class="contact-name">Dr. S. Kumar</p>
+            <p>📞 +91 98765 43210</p>
+            <p>📧 kumar@shreenivasa.edu.in</p>
         </div>
-    </div>
 
-    <div class="contact-group">
-        <h3 class="contact-title">Student Coordinators</h3>
-        <div class="contact-grid">
-            <div class="contact-card">
-                <p class="contact-name">Sridhar R</p>
-                <p class="contact-dept">
-                    Department of Artificial Intelligence & Data Science
-                </p>
-                <p>📞 +91 91234 56789</p>
-                <p>📧 nexora.sec@gmail.com</p>
-            </div>
+        <div class="contact-card">
+            <p class="contact-name">Sridhar R</p>
+            <p>📞 +91 91234 56789</p>
+            <p>📧 nexora.sec@gmail.com</p>
         </div>
     </div>
 </section>
 
 <footer class="glass footer">
-    © 2026 Nexora Symposium | UNIX UNION | Shreenivasa Engineering College
+    © 2026 NEXORA | UNIX UNION | Shreenivasa Engineering College
 </footer>
 
 <a href="#register" class="floating-register">Register Now</a>
@@ -199,10 +171,9 @@
 <div class="payment-modal" id="paymentModal">
     <div class="glass payment-box">
         <h3>Complete Payment</h3>
-        <p>Scan the QR & Pay <b>₹250</b></p>
-        <img src="qr.png" alt="UPI QR Code">
-        <a href="https://docs.google.com/forms/d/13eDxuurCiwSJYYGYV5ZqkO7A1-mG68TcIiGcs_eLLQA/edit?chromeless=1"
-           target="_blank">
+        <p>Scan & Pay ₹250</p>
+        <img src="qr.png" alt="QR">
+        <a href="https://docs.google.com/forms/d/ONLINE_FORM_LINK/viewform" target="_blank">
             <button>I’ve Paid – Continue</button>
         </a>
         <span class="close" onclick="closePayment()">✕</span>
