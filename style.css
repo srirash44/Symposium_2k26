@@ -550,3 +550,52 @@ button:hover {
     .bg-video { display: none; }
     .header h1 { font-size: 2.3rem; }
 }
+/* ================================
+   WIDE COUNTDOWN (FULL RANGE)
+================================ */
+
+.wide-countdown{
+    padding: 30px 26px;
+}
+
+.countdown-wide{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    width: 100%;
+    margin-top: 14px;
+}
+
+/* Make boxes wide + premium */
+.time-box.wide{
+    width: 100%;
+    padding: 22px 14px;
+    border-radius: 20px;
+}
+
+/* Bigger numbers */
+.time-box.wide span{
+    font-size: 2.2rem;
+}
+
+/* Desktop: even wider feel */
+@media (min-width: 1100px){
+    .countdown-wide{
+        gap: 22px;
+    }
+
+    .time-box.wide{
+        padding: 26px 16px;
+    }
+
+    .time-box.wide span{
+        font-size: 2.6rem;
+    }
+}
+
+/* Mobile still perfect */
+@media (max-width: 900px){
+    .countdown-wide{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
