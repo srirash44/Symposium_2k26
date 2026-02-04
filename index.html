@@ -1,56 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEXORA 2026 | National Level Technical Symposium</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEXORA 2026 | National Level Technical Symposium</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
 
-<!-- BACKGROUND VIDEO (WITH FALLBACK POSTER) -->
-<video class="bg-video" autoplay muted loop playsinline preload="auto" poster="./poster-bg.jpg">
+<!-- BACKGROUND VIDEO -->
+<video class="bg-video" autoplay muted loop playsinline poster="./poster-bg.jpg">
     <source src="./nexora-tech-bg.mp4" type="video/mp4">
 </video>
 
-<header class="glass header">
-    <h1>NEXORA 2026</h1>
+<!-- FLOATING ORBS -->
+<div class="orb orb1"></div>
+<div class="orb orb2"></div>
+<div class="orb orb3"></div>
+
+<header class="glass header reveal">
+    <h1 id="typing"></h1>
     <p class="subtitle">National Level Technical Symposium</p>
     <span class="date">13 • 02 • 2026</span>
+
+    <!-- COUNTDOWN -->
+    <div class="countdown-wrap">
+        <p class="count-title">⏳ Countdown to Nexora</p>
+
+        <div class="countdown">
+            <div class="time-box">
+                <span id="days">00</span>
+                <small>Days</small>
+            </div>
+
+            <div class="time-box">
+                <span id="hours">00</span>
+                <small>Hours</small>
+            </div>
+
+            <div class="time-box">
+                <span id="minutes">00</span>
+                <small>Minutes</small>
+            </div>
+
+            <div class="time-box">
+                <span id="seconds">00</span>
+                <small>Seconds</small>
+            </div>
+        </div>
+    </div>
 </header>
 
-<section class="glass section">
+<section class="glass section reveal">
     <h2>About Nexora</h2>
     <p>
-        <b>NEXORA 2026</b> is a national-level technical symposium crafted to unite innovation,
-        technical excellence, and future-ready engineering minds under one powerful platform.
+        <b>NEXORA 2026</b> unites innovation, competition, and futuristic technology.
+        A national platform for future-ready engineers.
     </p>
 </section>
 
-<section class="glass section">
+<section class="glass section reveal">
     <h2>Shreenivasa Engineering College (Autonomous)</h2>
     <p>
-        Shreenivasa Engineering College is an autonomous institution dedicated to academic excellence,
-        industry-aligned education, and impactful research.
+        Autonomous institution committed to academic excellence, research,
+        and industry-oriented education.
     </p>
 
     <div class="venue-box">
         <h3>📍 Venue</h3>
-        <p>
-            Shreenivasa Engineering College Campus<br>
-            Dharmapuri District, Tamil Nadu
-        </p>
+        <p>Shreenivasa Engineering College, Dharmapuri, Tamil Nadu</p>
     </div>
 </section>
 
-<section class="glass section center">
+<section class="glass section center reveal">
     <h2>Organized By</h2>
-    <h3 class="association">
-        <span>UNIX</span> <span>UNION</span>
-    </h3>
+    <h3 class="association"><span>UNIX</span> <span>UNION</span></h3>
 
     <div class="dept-grid">
         <div class="dept-card">
@@ -73,142 +100,120 @@
     </div>
 </section>
 
-<section class="gallery">
+<section class="gallery reveal">
     <div class="glass img-card">
         <img src="./college1.jpg" alt="Campus">
         <span>Campus View</span>
     </div>
+
     <div class="glass img-card">
         <img src="./college2.jpg" alt="Auditorium">
         <span>Auditorium</span>
     </div>
+
     <div class="glass img-card">
         <img src="./college3.jpg" alt="Labs">
         <span>Laboratories</span>
     </div>
 </section>
 
-<!-- EVENTS -->
-<section class="events">
+<!-- EVENTS AUTO SLIDE CAROUSEL -->
+<section class="events-carousel reveal">
+    <h2 class="carousel-title">⚡ Events Spotlight</h2>
 
-    <div class="glass card event-card">
-        <h3>💻 Technical Events</h3>
+    <div class="events-carousel-mask">
+        <div class="events-track">
 
-        <ul class="event-list">
-            <li><span class="ev-ico">📄</span> <b>PaperFusion</b> <span class="mini">Paper Presentation</span></li>
-            <li><span class="ev-ico">🚧</span> <b>Project Expo</b> <span class="mini">Project Showcase</span></li>
-            <li><span class="ev-ico">⚡</span> <b>CodeQuest</b> <span class="mini">Coding Challenge</span></li>
-            <li><span class="ev-ico">🐞</span> <b>Error 404</b> <span class="mini">Debugging Event</span></li>
-            <li><span class="ev-ico">🧠</span> <b>TalkTron</b> <span class="mini">Technical Speaking</span></li>
-        </ul>
-
-        <div class="event-extra">
-            <div class="pill">⏳ Time: 10:30 AM – 01:00 PM</div>
-            <div class="pill">📍 Venue: Seminar Hall / Labs</div>
-        </div>
-    </div>
-
-    <div class="glass card event-card">
-        <h3>🎉 Non-Technical Events</h3>
-
-        <ul class="event-list">
-            <li><span class="ev-ico">📸</span> <b>Huntix</b> <span class="mini">Photography</span></li>
-            <li><span class="ev-ico">🧊</span> <b>Break The Ice</b> <span class="mini">Fun Interaction</span></li>
-            <li><span class="ev-ico">🎨</span> <b>Logo Hunt</b> <span class="mini">Design Challenge</span></li>
-            <li><span class="ev-ico">🧩</span> <b>Mind Snap</b> <span class="mini">Mind Game</span></li>
-            <li><span class="ev-ico">🎭</span> <b>Art On Skin</b> <span class="mini">Creative Art</span></li>
-            <li><span class="ev-ico">✍️</span> <b>Creative Quote</b> <span class="mini">Writing Challenge</span></li>
-        </ul>
-
-        <div class="event-extra">
-            <div class="pill">⏳ Time: 01:30 PM – 04:30 PM</div>
-            <div class="pill">📍 Venue: Open Area / Classrooms</div>
-        </div>
-    </div>
-
-    <div class="glass card event-card full-card">
-        <h3>🏆 Cash Prizes • Certificates • Food</h3>
-
-        <div class="info-grid">
-            <div class="info-box">
-                <h4><span class="icon-anim coin">💰</span> Exclusive Cash Prizes</h4>
-                <p>
-                    Winners of each event will receive exclusive cash prizes.
-                    Certificates will be provided for all participants.
-                </p>
+            <!-- DUPLICATED CARDS FOR SMOOTH LOOP -->
+            <div class="glass event-card">
+                <h3>💻 Technical Events</h3>
+                <ul>
+                    <li>📄 PaperFusion</li>
+                    <li>🚧 Project Expo</li>
+                    <li>⚡ CodeQuest</li>
+                    <li>🐞 Error 404</li>
+                    <li>🧠 TalkTron</li>
+                </ul>
             </div>
 
-            <div class="info-box">
-                <h4><span class="icon-anim plate">🍽</span> Food & Refreshments</h4>
+            <div class="glass event-card">
+                <h3>🎉 Non-Technical Events</h3>
+                <ul>
+                    <li>📸 Huntix</li>
+                    <li>🧊 Break The Ice</li>
+                    <li>🎨 Logo Hunt</li>
+                    <li>🎭 Art On Skin</li>
+                    <li>✍️ Creative Quote</li>
+                </ul>
+            </div>
+
+            <div class="glass event-card">
+                <h3>🍽 Food & Refreshments</h3>
                 <p>
                     ₹300 per head includes:
-                    <br>🥪 Breakfast
-                    <br>🍛 Lunch
-                    <br>☕ Refreshments
+                    <br>🥪 Breakfast • 🍛 Lunch • ☕ Refreshments
                 </p>
             </div>
 
-            <div class="info-box">
-                <h4><span class="icon-anim cert">🎫</span> Participation Certificate</h4>
+            <div class="glass event-card">
+                <h3>💰 Cash Prizes</h3>
                 <p>
-                    All registered participants will receive a participation certificate.
+                    Exciting cash prizes for winners
+                    <br>🎫 Certificates for all participants
                 </p>
             </div>
+
+            <!-- COPY AGAIN FOR LOOP -->
+            <div class="glass event-card">
+                <h3>💻 Technical Events</h3>
+                <ul>
+                    <li>📄 PaperFusion</li>
+                    <li>🚧 Project Expo</li>
+                    <li>⚡ CodeQuest</li>
+                    <li>🐞 Error 404</li>
+                    <li>🧠 TalkTron</li>
+                </ul>
+            </div>
+
+            <div class="glass event-card">
+                <h3>🎉 Non-Technical Events</h3>
+                <ul>
+                    <li>📸 Huntix</li>
+                    <li>🧊 Break The Ice</li>
+                    <li>🎨 Logo Hunt</li>
+                    <li>🎭 Art On Skin</li>
+                    <li>✍️ Creative Quote</li>
+                </ul>
+            </div>
+
+            <div class="glass event-card">
+                <h3>🍽 Food & Refreshments</h3>
+                <p>
+                    ₹300 per head includes:
+                    <br>🥪 Breakfast • 🍛 Lunch • ☕ Refreshments
+                </p>
+            </div>
+
+            <div class="glass event-card">
+                <h3>💰 Cash Prizes</h3>
+                <p>
+                    Exciting cash prizes for winners
+                    <br>🎫 Certificates for all participants
+                </p>
+            </div>
+
         </div>
     </div>
-
-    <div class="glass card event-card full-card">
-        <h3>👥 Student Coordinators</h3>
-
-        <div class="coordinator-grid">
-            <div class="coordinator">
-                <p class="co-name">S. Gowtham Karthikeyan</p>
-                <p class="co-meta">Final Year IT</p>
-                <p class="co-meta">📞 97510 30751</p>
-            </div>
-
-            <div class="coordinator">
-                <p class="co-name">M. Vignesh</p>
-                <p class="co-meta">Final Year IT</p>
-                <p class="co-meta">📞 93600 30751</p>
-            </div>
-
-            <div class="coordinator">
-                <p class="co-name">X. Antony Raj</p>
-                <p class="co-meta">Final Year CSE</p>
-                <p class="co-meta">📞 63831 67030</p>
-            </div>
-
-            <div class="coordinator">
-                <p class="co-name">P. Senbagapriya</p>
-                <p class="co-meta">Third Year CSE</p>
-                <p class="co-meta">📞 89404 46344</p>
-            </div>
-
-            <div class="coordinator">
-                <p class="co-name">S. Afreen</p>
-                <p class="co-meta">Third Year IT</p>
-                <p class="co-meta">📞 81224 61937</p>
-            </div>
-
-            <div class="coordinator">
-                <p class="co-name">S. Abinaya</p>
-                <p class="co-meta">Third Year AI&DS</p>
-                <p class="co-meta">📞 84890 93048</p>
-            </div>
-        </div>
-    </div>
-
 </section>
 
-<section class="glass section">
+<section class="glass section reveal">
     <h2>Event Details</h2>
     <p><b>Date:</b> 13 February 2026</p>
     <p><b>Venue:</b> Shreenivasa Engineering College</p>
     <p><b>Location:</b> Dharmapuri, Tamil Nadu</p>
 </section>
 
-<section class="glass section">
+<section class="glass section reveal">
     <h2>Location & Map</h2>
     <div class="map-box">
         <iframe
@@ -218,14 +223,14 @@
     </div>
 </section>
 
-<section class="glass section center" id="register">
+<section class="glass section center reveal" id="register">
     <h2>Online Registration</h2>
     <p>Fee: ₹250 per participant</p>
     <p>Payment: GPay / PhonePe / Paytm</p>
     <button onclick="openPayment()">Proceed to Register</button>
 </section>
 
-<section class="glass section center">
+<section class="glass section center reveal">
     <h2>On-Site Registration</h2>
     <p>⏰ 8:30 AM – 10:30 AM | 📍 Main Block</p>
     <a href="https://docs.google.com/forms/d/ONSITE_FORM_LINK_HERE/viewform" target="_blank">
@@ -233,7 +238,7 @@
     </a>
 </section>
 
-<section class="glass section">
+<section class="glass section reveal">
     <h2>Contact Us</h2>
 
     <div class="contact-grid">
@@ -251,7 +256,7 @@
     </div>
 </section>
 
-<footer class="glass footer">
+<footer class="glass footer reveal">
     © 2026 NEXORA | UNIX UNION | Shreenivasa Engineering College
 </footer>
 
@@ -271,6 +276,73 @@
 </div>
 
 <script>
+/* =========================
+   TYPING EFFECT
+========================= */
+const typingText = "NEXORA 2026";
+let typingIndex = 0;
+
+function typeTitle(){
+    if(typingIndex < typingText.length){
+        document.getElementById("typing").innerHTML += typingText.charAt(typingIndex);
+        typingIndex++;
+        setTimeout(typeTitle, 120);
+    }
+}
+typeTitle();
+
+/* =========================
+   SCROLL REVEAL
+========================= */
+const reveals = document.querySelectorAll(".reveal");
+
+function revealOnScroll(){
+    reveals.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+        if(top < window.innerHeight - 100){
+            el.classList.add("active");
+        }
+    });
+}
+
+window.addEventListener("scroll", revealOnScroll);
+revealOnScroll();
+
+/* =========================
+   COUNTDOWN TIMER
+   (13 Feb 2026, 08:30 AM IST)
+========================= */
+const eventDate = new Date("2026-02-13T08:30:00+05:30").getTime();
+
+function updateCountdown(){
+    const now = new Date().getTime();
+    const distance = eventDate - now;
+
+    if(distance < 0){
+        document.getElementById("days").innerHTML = "00";
+        document.getElementById("hours").innerHTML = "00";
+        document.getElementById("minutes").innerHTML = "00";
+        document.getElementById("seconds").innerHTML = "00";
+        return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("days").innerHTML = String(days).padStart(2, "0");
+    document.getElementById("hours").innerHTML = String(hours).padStart(2, "0");
+    document.getElementById("minutes").innerHTML = String(minutes).padStart(2, "0");
+    document.getElementById("seconds").innerHTML = String(seconds).padStart(2, "0");
+}
+
+setInterval(updateCountdown, 1000);
+updateCountdown();
+
+/* =========================
+   PAYMENT MODAL
+========================= */
 function openPayment() {
     document.getElementById("paymentModal").style.display = "flex";
 }
